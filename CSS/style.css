@@ -1,3 +1,9 @@
 body {
-    background-color: #417ac0;
+    background-color: #8341c0;
+    font: size 16px;
+   }
+  
+   .heading {
+    font-size:2rem;
+    margin-right:20px;
    }
