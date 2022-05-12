@@ -17,7 +17,10 @@
 
 .navbar-brand{
     font-size:1.5rem;
-    color:rgb(0,0,0)
+    color:rgb(0,0,0);
+    font-style:italic;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.25rem;
 }
 .navbar-brand:hover{
     color:black;
@@ -34,18 +37,19 @@
     margin-left:10px;
     margin-right:10px;
     color:black;
+    font-weight: bold !important;
     font-family: 'Roboto', sans-serif;
 }
 .nav-link:hover{
-     font-style:oblique;
-     color:black;
-     font-weight: bold;
+     /*font-style:oblique;*/
+     color:#ff5100;
+     /*font-weight: bold;*/
 
 }
 .search_input{
     height: 40px;
-    width: 90%;
-    margin-right: -35px;
+    width: 100%;
+    margin-right: -30px;
     border-radius: 40px;
     border-right: none;
     outline:none;
@@ -65,4 +69,31 @@
 #search_btn:active{
     transform: scale(0.98);
     outline: none;
+}
+.main{
+    background-image:url("imgfolder/homeimg3.webp");
+    background-size:cover ;
+    width: 100%;
+    height:80vh;
+    background-repeat: no-repeat;
+    background-position: 50% ;
+    background-origin: border-box;
+}
+.main h1{
+    padding-top:70px;
+    font-size: 4rem;
+    color:whitesmoke;
+
+}
+.main p{
+    font-size:1.5rem;
+    color:white;
+}
+.btn-shopnow{
+   background-color: #ff5100;
+   color:white;
+   border: none;
+}
+.btn-shopnow:active{
+    outline:none;
 }
