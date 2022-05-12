@@ -9,7 +9,7 @@
 
 }
 
-.header{
+header{
     position:sticky;
     top:0;
 
@@ -46,6 +46,12 @@
      /*font-weight: bold;*/
 
 }
+.login a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+}
 .search_input{
     height: 40px;
     width: 100%;
@@ -66,9 +72,10 @@
     color:white;
     
 }
-#search_btn:active{
+#search_btn:hover{
     transform: scale(0.98);
     outline: none;
+    color:black;
 }
 .main{
     background-image:url("imgfolder/homeimg3.webp");
@@ -93,7 +100,9 @@
    background-color: #ff5100;
    color:white;
    border: none;
+   font-size:small;
+   border-radius: 5px;
 }
-.btn-shopnow:active{
+.btn-shopnow:hover{
     outline:none;
 }
