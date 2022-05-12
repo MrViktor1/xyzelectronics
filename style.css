@@ -1,0 +1,30 @@
+*{
+
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.header{
+    position:sticky;
+    top:0;
+
+}
+
+
+.nav-bar{
+
+    text-align: center;
+    padding-right: 20%;
+}
+.nav-link{
+    text-transform: capitalize;
+    padding:0 10px;
+    transition: font-style 0.5s linear;
+}
+.nav-link:hover{
+     font-style:oblique;
+
+}
