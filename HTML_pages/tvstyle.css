@@ -8,10 +8,8 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-header {
-  position: sticky;
-  top: 0;
-}
+
+
 
 .navbar-brand {
   font-size: 1rem;
@@ -77,6 +75,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 /* LG product style */
 .discount {
   position: absolute;
