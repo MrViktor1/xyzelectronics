@@ -5,9 +5,6 @@ class ItemsController {
         this.currentId = currentId;
     }
     //Step 3: Adding A New Item Programmatically
-    ItemsController() {
-
-    }
     addItem(name,description,price,img){
         const item = {
             id: this.currentId++,
@@ -22,12 +19,20 @@ class ItemsController {
     this.items.push(item);   
 
     }
+    setLocalStorage(){
+        localStorage.setItem("item", JSON.stringify(this.items));
+        localStorage.setItem("currentID", JSON.stringify(this.currentID));
+    }
+    loadLocalStorage(){
+        this.items = JSON.parse(localStorage.getItem("item"))
+        this.currentID = JSON.parse(localStorage.getItem('currentID'))
+     }
 }
 
-let tv = new ItemsController();
-tv.addItem('samsung','tv samsung',2000,'src','page')
-tv.addItem('LG','Lg TV',1500,'src','page1')
+//let tv = new ItemsController();
+// tv.addItem('samsung','tv samsung',2000,'src')
+// tv.addItem('LG','Lg TV',1500,'src')
 //addItem is used to add item in the items array
-console.log(tv.items);
+//console.log(tv.items);
 
 
