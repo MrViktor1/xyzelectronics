@@ -25,8 +25,8 @@ class ItemsController {
 }
 
 let tv = new ItemsController();
-tv.addItem('samsung','tv samsung',2000,'src','page')
-tv.addItem('LG','Lg TV',1500,'src','page1')
+tv.addItem('samsung','tv samsung',2000,'src')
+tv.addItem('LG','Lg TV',1500,'src')
 //addItem is used to add item in the items array
 console.log(tv.items);
 
