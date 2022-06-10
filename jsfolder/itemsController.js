@@ -19,6 +19,14 @@ class ItemsController {
     this.items.push(item);   
 
     }
+    setLocalStorage(){
+        localStorage.setItem("item", JSON.stringify(this.items));
+        localStorage.setItem("currentID", JSON.stringify(this.currentID));
+    }
+    loadLocalStorage(){
+        this.items = JSON.parse(localStorage.getItem("item"))
+        this.currentID = JSON.parse(localStorage.getItem('currentID'))
+     }
 }
 
 //let tv = new ItemsController();
