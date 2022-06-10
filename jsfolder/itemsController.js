@@ -5,9 +5,6 @@ class ItemsController {
         this.currentId = currentId;
     }
     //Step 3: Adding A New Item Programmatically
-    ItemsController() {
-
-    }
     addItem(name,description,price,img){
         const item = {
             id: this.currentId++,
@@ -24,10 +21,10 @@ class ItemsController {
     }
 }
 
-let tv = new ItemsController();
-tv.addItem('samsung','tv samsung',2000,'src')
-tv.addItem('LG','Lg TV',1500,'src')
+//let tv = new ItemsController();
+// tv.addItem('samsung','tv samsung',2000,'src')
+// tv.addItem('LG','Lg TV',1500,'src')
 //addItem is used to add item in the items array
-console.log(tv.items);
+//console.log(tv.items);
 
 
